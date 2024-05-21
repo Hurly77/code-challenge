@@ -15,8 +15,6 @@ class VanGoghImageScraper
       year = element.at_css(".ellip")&.text&.strip
       link_search_path = element.at_css("a")&.[]("href")
 
-      puts image
-
       result = {
         name: name,
         image: image,
